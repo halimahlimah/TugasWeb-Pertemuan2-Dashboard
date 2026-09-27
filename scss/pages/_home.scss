@@ -1,0 +1,85 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.eyebrow {
+  margin: 0 0 $spacing-sm;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: $color-secondary;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin: 0 0 $spacing-lg;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.hero-text {
+  max-width: 620px;
+  font-size: 1.2rem;
+  color: $color-text-muted;
+  margin-bottom: 30px;
+}
+
+.hero-grid,
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: $spacing-xl;
+  align-items: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: $spacing-lg;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: $color-secondary;
+}
+
+.muted {
+  color: #69758a;
+  font-weight: 700;
+}
+
+.note {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-left: 4px solid $color-secondary;
+  background: $color-surface;
+  border-radius: 8px;
+}

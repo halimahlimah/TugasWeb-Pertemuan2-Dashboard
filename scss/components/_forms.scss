@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.contact-form {
+  @include card;
+  padding: $spacing-lg;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid $color-input-border;
+  border-radius: 8px;
+  background: $color-surface;
+  color: $color-primary;
+  font: inherit;
+
+  &:focus {
+    outline: 3px solid rgba(55, 103, 168, 0.2);
+    border-color: $color-secondary;
+  }
+}
+
+.error-message {
+  display: block;
+  min-height: 20px;
+  margin-top: 5px;
+  color: $color-error;
+}
+
+.form-status {
+  min-height: 24px;
+  font-weight: 700;
+}

@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.button {
+  @include button-style;
+
+  &:hover,
+  &:focus-visible {
+    background: #2a3a59;
+  }
+}

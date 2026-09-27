@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.site-footer {
+  background: $color-primary;
+  color: $color-surface;
+
+  .footer-inner {
+    @include container;
+    padding: $spacing-md 0;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    a {
+      text-underline-offset: 3px;
+    }
+  }
+}

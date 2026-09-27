@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+
+$spacings: (
+  "xs": $spacing-xs,
+  "sm": $spacing-sm,
+  "md": $spacing-md,
+  "lg": $spacing-lg,
+  "xl": $spacing-xl
+);
+
+@each $name, $value in $spacings {
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+}

@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.section {
+  padding: $spacing-xxl 0;
+}
+
+.alt-section {
+  background: $color-alt-background;
+}
+
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #eaf4ff, $color-background);
+}
+
+.container {
+  @include container;
+}
